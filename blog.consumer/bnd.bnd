@@ -4,9 +4,11 @@
 	biz.aQute.bnd.annotation,\
 	${junit},\
 	blog.api;version=1.0,\
-	javax.servlet__servlet-api;version=2.5.0
+	javax.servlet__servlet-api;version=2.5.0,\
+	biz.aQute.bndlib;version=2.3.0.201405100607
 Bundle-Version: 0.0.0.${tstamp}
 Private-Package:  \
-	blog.consumer
+	blog.consumer,\
+	aQute.lib.io
 Service-Component:  \
 	*

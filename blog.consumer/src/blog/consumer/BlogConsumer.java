@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import blog.api.Blog;
 import aQute.bnd.annotation.component.*;
+import aQute.lib.io.IO;
 
 @Component(
 		properties = {
@@ -42,6 +43,17 @@ public class BlogConsumer extends HttpServlet implements Servlet {
 		writer.println("END");
 		writer.flush();
 		writer.close();
+	}
+	
+	@Override
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		String data = IO.collect(req.getInputStream());
+		try {
+			blog.addEntry(data);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }
