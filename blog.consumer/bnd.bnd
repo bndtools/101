@@ -1,0 +1,11 @@
+-buildpath:  \
+	osgi.core,\
+	osgi.cmpn,\
+	biz.aQute.bnd.annotation,\
+	${junit},\
+	blog.api;version=1.0
+Bundle-Version: 0.0.0.${tstamp}
+Private-Package:  \
+	blog.consumer
+Service-Component:  \
+	*
