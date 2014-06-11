@@ -14,7 +14,7 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBObject;
 import com.mongodb.MongoClient;
 
-@Component
+@Component(properties = {"osgi.command.scope=blog", "osgi.command.function=listEntries|addEntry"}, immediate = true)
 public class BlogProvider implements Blog {
 	
 	private DB db;
