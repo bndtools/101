@@ -1,0 +1,5 @@
+-buildpath:  \
+	biz.aQute.bnd.annotation
+Bundle-Version: 1.0.0.${tstamp}
+Export-Package:  \
+	blog.api
