@@ -1,2 +1,33 @@
-<?xml version='1.0' encoding='utf-8'?>
-<repository increment='1342528672992' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'/>
+<?xml version="1.0" encoding="utf-8"?>
+<repository increment="1402452507669" name="Release" xmlns="http://www.osgi.org/xmlns/repository/v1.0.0">
+  <resource>
+    <capability namespace="osgi.identity">
+      <attribute name="osgi.identity" value="blog.api"/>
+      <attribute name="type" value="osgi.bundle"/>
+      <attribute name="version" type="Version" value="1.0.0.201406110208"/>
+    </capability>
+    <capability namespace="osgi.content">
+      <attribute name="osgi.content" value="b54a4ca5b760aa32cb801119c9a2e1946e19fd10978cf57b262af0bdc2573557"/>
+      <attribute name="url" value="blog.api/blog.api-1.0.0.jar"/>
+      <attribute name="size" type="Long" value="2900"/>
+      <attribute name="mime" value="application/vnd.osgi.bundle"/>
+    </capability>
+    <capability namespace="osgi.wiring.bundle">
+      <attribute name="osgi.wiring.bundle" value="blog.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201406110208"/>
+    </capability>
+    <capability namespace="osgi.wiring.host">
+      <attribute name="osgi.wiring.host" value="blog.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201406110208"/>
+    </capability>
+    <capability namespace="osgi.wiring.package">
+      <attribute name="osgi.wiring.package" value="blog.api"/>
+      <attribute name="version" type="Version" value="1.0.0"/>
+      <attribute name="bundle-symbolic-name" value="blog.api"/>
+      <attribute name="bundle-version" type="Version" value="1.0.0.201406110208"/>
+    </capability>
+    <requirement namespace="osgi.ee">
+      <directive name="filter" value="(&amp;(osgi.ee=JavaSE)(version=1.7))"/>
+    </requirement>
+  </resource>
+</repository>
